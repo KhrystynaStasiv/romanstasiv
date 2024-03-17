@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #434455;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/*================== Header ===================*/
+
+.header {
+    background-color: black;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    margin-right: 120px;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-list-item {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.current {
+    position: relative;
+    color: white;
+}
+.current::after {
+    content: "";
+    width: 100%;
+    height: ;
+    position: absolute;
+    left: 0;
+    bottom: ;
+}
+.nav-list-item:hover {
+    color:crimson;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.link {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    font-style: normal;
+}
+.link:hover {
+    color: crimson;
+}
